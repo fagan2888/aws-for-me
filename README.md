@@ -12,21 +12,28 @@ Goto AWS Console. For Cornell, http://signin.aws.cucloud.net/
 # Setup
 I configured a specific IAM
 - create IAM
-- 
+
 Download the AWS CLI
-  pip install awscli
+
+    pip install awscli
+
 Run configure command
-  aws configure
+
+    aws configure
+
 Fill in 
--  Access Key ID
-- 
+- Access Key ID
+- Secret key
+- us-east-2
 
 # Getting the ID of the launched instance `instance-id`
-  aws ec2 describe-instances --output table
+    aws ec2 describe-instances --output table
+
 Possibly
-  aws ec2 describe-instances --output table | grep -E "InstanceId|PublicDnsName"
+
+    aws ec2 describe-instances --output table | grep -E "InstanceId|PublicDnsName"
 
 # Connecting to the instance
-  ssh -i .ssh/amazon-cornell-default.pem $USER@$PublicDnsName
+    ssh -i .ssh/amazon-cornell-default.pem $USER@$PublicDnsName
 where the $USER may differ according to the launched AMI (Ubuntu=ubuntu)
 
