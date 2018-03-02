@@ -37,3 +37,7 @@ Possibly
     ssh -i .ssh/amazon-cornell-default.pem $USER@$PublicDnsName
 where the $USER may differ according to the launched AMI (Ubuntu=ubuntu)
 
+# Stopping instances
+    aws ec2 stop-instances --instance-ids $InstanceId
+
+
