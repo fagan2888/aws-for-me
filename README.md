@@ -62,4 +62,20 @@ The aws cli spits out an id:
 Stopping the cluster then is
 
     aws emr terminate-clusters --cluster-ids j-26WVR4U3W5ID7
+## Finding out stuff about the cluster
+Assuming you didn't terminate it,
 
+    aws emr describe-cluster --cluster-id j-289A9I8T2GVNJ --output table
+
+## Fails to start because of absence of VPC
+As configured, the instance doesn't actually start:
+   
+     Subnet is required : The specified instance type m4.large can only be used in a VPC.
+
+Solution: Go to 
+
+## Problem: The given SSH key name was invalid
+The key name is not the access key ID (in the IAM console [https://console.aws.amazon.com/iam/home]), but rather the name you gave the key in the EC2 console [https://console.aws.amazon.com/ec2/home#c=EC2&s=KeyPairs] 
+
+## Logging into the EMR cluster head node
+The instructions say "Once the cluster is launched, set up the SSH tunnel[https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ssh-tunnel.html] ..." which requires you to know the Public DNS name of the cluster.
