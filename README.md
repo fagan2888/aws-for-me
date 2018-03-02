@@ -79,3 +79,8 @@ The key name is not the access key ID (in the IAM console [https://console.aws.a
 
 ## Logging into the EMR cluster head node
 The instructions say "Once the cluster is launched, set up the SSH tunnel[https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ssh-tunnel.html] ..." which requires you to know the Public DNS name of the cluster.
+
+# After ALL that
+
+    Code   |  BOOTSTRAP_FAILURE                                                                                     ||||
+    Message|  Master instance (i-0e11136ca0da02815) failed attempting to download bootstrap action 1 file from S3   ||||
