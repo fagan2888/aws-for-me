@@ -53,3 +53,13 @@ Solution: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-iam-roles-d
     
 ## Problem: unsupported instance type
 The example for `sparklyr` uses m3.2xlarge, which no longer exist. Use m4.2xlarge or m4.large.
+
+## Problem: how to stop the cluster
+The aws cli spits out an id:
+
+    j-26WVR4U3W5ID7
+
+Stopping the cluster then is
+
+    aws emr terminate-clusters --cluster-ids j-26WVR4U3W5ID7
+
