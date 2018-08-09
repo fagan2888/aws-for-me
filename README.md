@@ -6,6 +6,9 @@ This is just for me. YMMV.
 - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
 - https://aws.amazon.com/blogs/big-data/running-sparklyr-rstudios-r-interface-to-spark-on-amazon-emr/
 
+## Cornell-specific
+- https://confluence.cornell.edu/display/CLOUD/Standard+Tagging
+
 # Basics
 ## Launching
 Goto AWS Console. For Cornell, http://signin.aws.cucloud.net/
