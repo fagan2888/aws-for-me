@@ -5,6 +5,7 @@ This is just for me. YMMV.
 # Sources
 - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
 - https://aws.amazon.com/blogs/big-data/running-sparklyr-rstudios-r-interface-to-spark-on-amazon-emr/
+- http://bit.ly/cu-aws-2018-08-22 (tutorial by Paul Allen on that date)
 
 ## Cornell-specific
 - https://confluence.cornell.edu/display/CLOUD/Standard+Tagging
@@ -21,6 +22,10 @@ I configured a specific IAM
 Download the AWS CLI
 
     pip install awscli
+
+or (openSUSE >= 15)
+    
+    zypper install aws-cli
 
 Run configure command
 
