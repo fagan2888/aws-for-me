@@ -13,7 +13,10 @@ This is just for me. YMMV.
 # Basics
 ## Launching
 Goto AWS Console. For Cornell, http://signin.aws.cucloud.net/
+- Search for EC2 Console
+- Goto "Key Pairs"
 - when requested, and not previously configured, create a key with PEM file. Download and follow instructions (needed for SSH access)
+- download PEM file (put it into a known location)
 
 ## Setup
 I configured a specific IAM
@@ -35,6 +38,10 @@ Fill in
 - Access Key ID
 - Secret key
 - us-east-2
+
+## Launch an instance
+
+Note: possibility to get billing alerts
 
 ## Getting the ID of the launched instance `instance-id`
     aws ec2 describe-instances --output table
